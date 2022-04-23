@@ -177,7 +177,8 @@ header section .hero .heroButton {
   overflow: hidden;
 }
 
-header section .hero .heroButton .projectBtn button {
+header section .hero .heroButton .projectBtn .btn {
+  display: block;
   padding: 0.4em 1.9em;
   font-size: 1.3rem;
   font-weight: bold;
@@ -188,7 +189,7 @@ header section .hero .heroButton .projectBtn button {
 }
 
 @media screen and (min-width: 900px) {
-  header section .hero .heroButton .projectBtn button {
+  header section .hero .heroButton .projectBtn .btn {
     font-size: 2rem;
   }
 }

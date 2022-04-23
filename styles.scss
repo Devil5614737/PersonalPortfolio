@@ -118,7 +118,8 @@ header {
         margin-top: 12px;
         overflow: hidden;
         .projectBtn {
-          button {
+          .btn {
+            display: block;
             padding: 0.4em 1.9em;
             font-size: 1.3rem;
             font-weight: bold;
