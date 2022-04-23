@@ -126,6 +126,9 @@ header {
             background: #0029ff;
             color: white;
             border: none;
+            &:hover{
+           
+            }
             @media screen and (min-width: 900px) {
               font-size: 2rem;
             }
@@ -415,8 +418,8 @@ body.active{
       gap: 12px 12px;
       place-items: center;
       @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(5,1fr);
-        gap: 44px 0;
+        grid-template-columns: repeat(4,1fr);
+        gap: 84px 0;
       }
       @media screen and (min-width: 900px) {
         grid-template-columns: repeat(5,1fr);
@@ -424,7 +427,7 @@ body.active{
       }
       .skills{
         .icon{
-          width: fit-content;
+          width: 100%;
           height: 90px;
           // display: none;
           @media screen and (min-width: 600px) {
@@ -452,4 +455,59 @@ filter: invert(1);
 }
 .nextjs{
 filter: invert(1);
+}
+
+.links2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+  height: 70vh;
+  justify-content: space-between;
+  padding: 3em;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  top: -100%;
+  transition: all .4s ease-in-out;
+  @media screen and (min-width:600px) {
+    display: none;
+  }
+  #themeBtn2{
+    cursor: pointer;
+  }
+  a{
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    // background-color: white;
+
+  }
+  .contactBtn {
+    font-size: 1.5rem;
+    padding: 0.3em 1em;
+    cursor: pointer;
+    font-weight: 500;
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 0%,
+      rgba(255, 149, 0, 1) 100%
+    );
+    color: white;
+    border: none;
+  }
+}
+.links2.active{
+  top:0%
 }

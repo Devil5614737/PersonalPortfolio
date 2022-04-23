@@ -546,9 +546,9 @@ body.active .nextjs {
 
 @media screen and (min-width: 600px) {
   .skillSection main .skillsIcons {
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
-    gap: 44px 0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 84px 0;
   }
 }
 
@@ -561,9 +561,7 @@ body.active .nextjs {
 }
 
 .skillSection main .skillsIcons .skills .icon {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   height: 90px;
 }
 
@@ -599,5 +597,71 @@ body.active .nextjs {
 .nextjs {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.links2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid;
+  height: 70vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em;
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  top: -100%;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .links2 {
+    display: none;
+  }
+}
+
+.links2 #themeBtn2 {
+  cursor: pointer;
+}
+
+.links2 a {
+  font-weight: 500;
+  font-size: 3rem;
+  color: white;
+}
+
+.links2 .close {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.links2 .contactBtn {
+  font-size: 1.5rem;
+  padding: 0.3em 1em;
+  cursor: pointer;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right top, from(#833ab4), color-stop(0%, #fd1d1d), to(#ff9500));
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 0%, #ff9500 100%);
+  color: white;
+  border: none;
+}
+
+.links2.active {
+  top: 0%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -124,3 +124,20 @@ const themeToggle=()=>{
 }
 
 themeToggle()
+
+
+const hamburgerMenu=()=>{
+  const menuBtn=document.getElementById('hamburger')
+  const closeBtn=document.getElementById('close')
+  const menu=document.querySelector('.links2')
+
+  menuBtn.addEventListener('click',()=>{
+    menu.classList.add('active')
+  })
+  closeBtn.addEventListener('click',()=>{
+    menu.classList.remove('active')
+  })
+
+}
+
+hamburgerMenu()
