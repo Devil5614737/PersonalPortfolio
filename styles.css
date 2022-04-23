@@ -363,6 +363,7 @@ header section .hero .heroButton .projectBtn button {
 
 .contactSection {
   margin-top: 52px;
+  padding-bottom: 5rem;
 }
 
 .contactSection main {
@@ -703,5 +704,37 @@ body.active .nextjs {
 .hamburger2.active {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.socialLinks {
+  margin-top: 32px;
+}
+
+.socialLinks #github {
+  height: 35px;
+  width: 35px;
+  margin-right: 12px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.socialLinks #github:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.socialLinks #linkedIn {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.socialLinks #linkedIn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*# sourceMappingURL=styles.css.map */

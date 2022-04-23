@@ -263,6 +263,7 @@ header {
 
 .contactSection {
   margin-top: 52px;
+  padding-bottom: 5rem;
   main {
     padding: 2rem;
   
@@ -531,4 +532,29 @@ filter: invert(1);
 
 .hamburger2.active{
   filter:invert(1)
+}
+
+.socialLinks{
+ margin-top:32px; 
+ #github{
+height: 35px;
+width: 35px;
+margin-right: 12px;
+transition: all .4s ease-in-out;
+cursor: pointer;
+&:hover{
+transform: translateY(-5px);
+}
+
+ }
+ #linkedIn{
+   height: 35px;
+   width: 35px;
+   cursor: pointer;
+   transition: all .4s ease-in-out;
+cursor: pointer;
+&:hover{
+transform: translateY(-5px);
+}
+ }
 }
