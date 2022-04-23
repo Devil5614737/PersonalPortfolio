@@ -6,9 +6,10 @@
 }
 
 body{
+    scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .4s cubic-bezier(.89,.1,.45,.27);
 }
 
 input,button,textarea{

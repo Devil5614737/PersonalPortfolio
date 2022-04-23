@@ -7,10 +7,11 @@
 }
 
 body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: all 0.4s cubic-bezier(0.89, 0.1, 0.45, 0.27);
+  transition: all 0.4s cubic-bezier(0.89, 0.1, 0.45, 0.27);
 }
 
 input, button, textarea {
@@ -213,6 +214,18 @@ header section .hero .heroButton .projectBtn button {
   font-weight: bold;
 }
 
+@media screen and (min-width: 600px) {
+  .projectsSection main .mainTitle p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .projectsSection main .mainTitle p {
+    font-size: 4rem;
+  }
+}
+
 .projectsSection main .mainTitle .titleBar {
   margin-top: 5px;
   width: 50px;
@@ -223,7 +236,7 @@ header section .hero .heroButton .projectBtn button {
 }
 
 .projectsSection main .projectsContainer {
-  margin-top: 22px;
+  margin-top: 52px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
@@ -373,6 +386,18 @@ header section .hero .heroButton .projectBtn button {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 600px) {
+  .contactSection main .mainTitle p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .contactSection main .mainTitle p {
+    font-size: 4rem;
+  }
+}
+
 .contactSection main .mainTitle .bar {
   margin-top: 5px;
   width: 50px;
@@ -383,7 +408,7 @@ header section .hero .heroButton .projectBtn button {
 }
 
 .contactSection main .formContainer {
-  margin-top: 42px;
+  margin-top: 52px;
 }
 
 .contactSection main .formContainer form {
@@ -525,6 +550,18 @@ body.active .nextjs {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 600px) {
+  .skillSection main .mainTitle p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .skillSection main .mainTitle p {
+    font-size: 4rem;
+  }
+}
+
 .skillSection main .mainTitle .bar {
   margin-top: 5px;
   width: 50px;
@@ -535,7 +572,7 @@ body.active .nextjs {
 }
 
 .skillSection main .skillsIcons {
-  margin-top: 22px;
+  margin-top: 52px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];

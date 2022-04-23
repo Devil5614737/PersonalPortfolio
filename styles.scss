@@ -152,6 +152,12 @@ header {
       p {
         font-size: 2rem;
         font-weight: bold;
+        @media screen and (min-width: 600px) {
+          font-size: 3rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 4rem;
+        }
       }
       .titleBar {
         margin-top: 5px;
@@ -162,7 +168,7 @@ header {
       }
     }
     .projectsContainer {
-      margin-top: 22px;
+      margin-top: 52px;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 22px;
@@ -270,6 +276,12 @@ header {
       p {
         font-weight: bold;
         font-size: 2rem;
+        @media screen and (min-width: 600px) {
+          font-size: 3rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 4rem;
+        }
       }
       .bar {
         margin-top: 5px;
@@ -280,7 +292,7 @@ header {
       }
     }
     .formContainer {
-      margin-top: 42px;
+      margin-top: 52px;
       form {
         position: relative;
         label {
@@ -402,6 +414,12 @@ body.active{
       p{
         font-weight: bold;
         font-size: 2rem;
+        @media screen and (min-width: 600px) {
+          font-size: 3rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 4rem;
+        }
       }
       .bar{
         margin-top: 5px;
@@ -412,7 +430,7 @@ body.active{
       }
     }
     .skillsIcons{
-      margin-top: 22px;
+      margin-top: 52px;
       display: grid;
       grid-template-columns: repeat(3,1fr);
       gap: 12px 12px;
