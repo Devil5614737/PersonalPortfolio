@@ -131,24 +131,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const themeToggle = () => {
   let btn = document.getElementById("themeBtn");
+  if(localStorage.getItem('dark')){
+    document.body.classList.add("active");
+    btn.style.filter = "invert(1)";
+  }
   btn.addEventListener("click", () => {
+    localStorage.setItem('dark','true')
     document.body.classList.toggle("active");
     if (document.body.classList.contains("active")) {
       btn.style.filter = "invert(1)";
     } else {
+      btn.style.filter = "invert(0)";
+      if(localStorage.getItem('dark')){
+        localStorage.removeItem('dark')
+      }
     }
   });
 };
 const themeToggle2 = () => {
   let btn = document.getElementById("themeBtn2");
   let menu = document.querySelector(".hamburger2");
+  if(localStorage.getItem('dark')){
+    document.body.classList.add("active");
+    btn.style.filter = "invert(1)";
+  }
   btn.addEventListener("click", () => {
+    localStorage.setItem('dark','true')
     document.body.classList.toggle("active");
     if (document.body.classList.contains("active")) {
-      menu.classList.add("active");
-      btn.style.filter = "invert(0)";
+
+      menu.style.filter = "invert(1)";
     } else {
-      menu.classList.remove("active");
+      
+      if(localStorage.getItem('dark')){
+        localStorage.removeItem('dark')
+      
+      }
     }
   });
 };
