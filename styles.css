@@ -610,11 +610,9 @@ body.active .nextjs {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid;
-  height: 70vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 3em;
   position: absolute;
   z-index: 99;
@@ -663,5 +661,10 @@ body.active .nextjs {
 
 .links2.active {
   top: 0%;
+}
+
+.hamburger2.active {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -110,20 +110,38 @@ function animateFrom(elem, direction) {
 
 const themeToggle=()=>{
     let btn=document.getElementById('themeBtn')
-    
-
+    let menu=document.querySelector('.hamburger2')
     btn.addEventListener('click',()=>{
         document.body.classList.toggle('active')
         if( document.body.classList.contains('active')){
 
             btn.style.filter='invert(1)'
-        }else{
+            menu.classList.add('active')
+        
+          }else{
             btn.style.filter='invert(0)'
+            menu.classList.remove('active')
+        }
+    })
+}
+const themeToggle2=()=>{
+    let btn=document.getElementById('themeBtn2')
+    let menu=document.querySelector('.hamburger2')
+    btn.addEventListener('click',()=>{
+        document.body.classList.toggle('active')
+        if( document.body.classList.contains('active')){
+          menu.classList.add('active')
+          btn.style.filter='invert(0)'
+       
+        }else{
+          menu.classList.remove('active')
         }
     })
 }
 
+
 themeToggle()
+themeToggle2()
 
 
 const hamburgerMenu=()=>{
