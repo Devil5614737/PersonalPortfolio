@@ -154,6 +154,8 @@ const themeToggle2 = () => {
   if(localStorage.getItem('dark')){
     document.body.classList.add("active");
     btn.style.filter = "invert(1)";
+    menu.style.filter = "invert(1)";
+    
   }
   btn.addEventListener("click", () => {
     localStorage.setItem('dark','true')
