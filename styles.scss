@@ -657,15 +657,16 @@ transform: translateY(-5px);
      
     }
     .resume{
-      display: grid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0 auto;
       border-radius: 5px;
       background-color: blue;
       width: 100px;
       height: 40px;
       color: white;
-      place-items: center;
-      align-items: center;
+     
       margin-top: 12px;
       font-size: 1.4em;
       @media screen and (min-width: 600px) {
