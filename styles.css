@@ -30,6 +30,7 @@ html {
 header {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 header nav .navContainer {
@@ -132,7 +133,7 @@ header nav .navContainer .hamburger .line {
 }
 
 header section {
-  margin-top: 112px;
+  margin-top: 92px;
 }
 
 header section .hero {
@@ -159,7 +160,7 @@ header section .hero .heroText h1 {
 
 @media screen and (min-width: 900px) {
   header section .hero .heroText h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
   }
 }
@@ -188,10 +189,19 @@ header section .hero .heroButton .projectBtn .btn {
   border: none;
 }
 
+header section .hero .heroButton .projectBtn .btn:hover {
+  background: #2246fa;
+}
+
 @media screen and (min-width: 900px) {
   header section .hero .heroButton .projectBtn .btn {
     font-size: 2rem;
   }
+}
+
+.projectsSection {
+  background-color: hotpink;
+  padding: 3em 0;
 }
 
 .projectsSection main {
@@ -211,6 +221,7 @@ header section .hero .heroButton .projectBtn .btn {
 }
 
 .projectsSection main .mainTitle p {
+  color: white;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -269,6 +280,7 @@ header section .hero .heroButton .projectBtn .btn {
 
 .projectsSection main .projectsContainer .projects {
   position: relative;
+  border-radius: 7px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -276,18 +288,31 @@ header section .hero .heroButton .projectBtn .btn {
 .projectsSection main .projectsContainer .projects:hover::before {
   content: "";
   position: absolute;
+  background: black;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.63%, rgba(0, 0, 0, 0.47)), color-stop(103.76%, rgba(255, 0, 184, 0.47)));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.47) 0.63%, rgba(255, 0, 184, 0.47) 103.76%);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-animation-name: clip;
+          animation-name: clip;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  z-index: 1;
+  border-radius: 7px;
 }
 
 .projectsSection main .projectsContainer .projects:hover .projectInfo {
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  -webkit-animation-name: info;
+          animation-name: info;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .projectsSection main .projectsContainer .projects img {
@@ -299,16 +324,20 @@ header section .hero .heroButton .projectBtn .btn {
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo {
-  position: absolute;
-  bottom: 26px;
   opacity: 0;
-  left: 12px;
-  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 888;
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo .projectTitle p {
-  font-size: 1.7rem;
   font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo .projectTechs {
@@ -318,21 +347,28 @@ header section .hero .heroButton .projectBtn .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo .projectTechs p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-right: 1em;
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo .projectLinks {
+  margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 9px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projectsSection main .projectsContainer .projects .projectInfo .projectLinks .githubLink {
@@ -411,6 +447,13 @@ header section .hero .heroButton .projectBtn .btn {
 
 .contactSection main .formContainer {
   margin-top: 52px;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .contactSection main .formContainer {
+    max-width: 100%;
+  }
 }
 
 .contactSection main .formContainer form {
@@ -737,5 +780,173 @@ body.active .nextjs {
 .socialLinks #linkedIn:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+@-webkit-keyframes clip {
+  0% {
+    -webkit-clip-path: circle(2% at 6% 90%);
+            clip-path: circle(2% at 6% 90%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+
+@keyframes clip {
+  0% {
+    -webkit-clip-path: circle(2% at 6% 90%);
+            clip-path: circle(2% at 6% 90%);
+  }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+}
+
+@-webkit-keyframes info {
+  0% {
+    margin-top: 72px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes info {
+  0% {
+    margin-top: 72px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 42px;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.aboutContainer .imgContainer {
+  margin: 0 auto;
+}
+
+.aboutContainer .imgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutContainer .imgContainer img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContainer .imgContainer img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.aboutContainer .aboutInfo {
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutContainer .aboutInfo {
+    margin-left: 44px;
+    margin-top: 1px;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContainer .aboutInfo {
+    margin-left: 44px;
+    margin-top: 1px;
+    font-size: 1.4em;
+  }
+}
+
+.aboutContainer .aboutInfo p {
+  font-size: 1.4em;
+  line-height: 2;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutContainer .aboutInfo p {
+    max-width: 90%;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContainer .aboutInfo p {
+    max-width: 80%;
+    line-height: 1.7;
+  }
+}
+
+.aboutContainer .aboutInfo .resume {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  color: white;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  .aboutContainer .aboutInfo .resume {
+    margin: 15px 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aboutContainer .aboutInfo .resume {
+    margin: 15px 0;
+  }
+}
+
+.aboutContainer .aboutInfo .resume:hover {
+  background-color: #3636fb;
 }
 /*# sourceMappingURL=styles.css.map */
