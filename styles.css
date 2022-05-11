@@ -932,17 +932,24 @@ body.active .nextjs {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 12px;
+  font-size: 1.4em;
 }
 
 @media screen and (min-width: 600px) {
   .aboutContainer .aboutInfo .resume {
     margin: 15px 0;
+    font-size: 1.3em;
+    width: 120px;
+    height: 40px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .aboutContainer .aboutInfo .resume {
     margin: 15px 0;
+    font-size: 1.3em;
+    width: 120px;
+    height: 40px;
   }
 }
 

@@ -667,11 +667,18 @@ transform: translateY(-5px);
       place-items: center;
       align-items: center;
       margin-top: 12px;
+      font-size: 1.4em;
       @media screen and (min-width: 600px) {
      margin: 15px 0;
+     font-size: 1.3em;
+     width: 120px;
+     height: 40px;
        }
        @media screen and (min-width: 900px) {
     margin: 15px 0;
+    font-size: 1.3em;
+    width: 120px;
+    height: 40px;
        }
       &:hover{
         background-color: rgb(54, 54, 251);
