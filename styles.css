@@ -85,7 +85,7 @@ header nav .navContainer .links #themeBtn {
 }
 
 header nav .navContainer .links a:hover {
-  color: grey;
+  color: #dfdfdf;
 }
 
 @media screen and (min-width: 600px) {
@@ -99,10 +99,6 @@ header nav .navContainer .links a:hover {
 header nav .navContainer .links .contactBtn {
   -webkit-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
-}
-
-header nav .navContainer .links .contactBtn:hover {
-  background: linear-gradient(108grad, #ff007a 32.48%, RGB(66, 0, 255) 149.9%);
 }
 
 @media screen and (min-width: 600px) {
