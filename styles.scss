@@ -26,6 +26,7 @@ header {
       }
       .links {
         display: none;
+      
         @media screen and (min-width: 600px) {
           display: flex;
           align-items: center;
@@ -36,8 +37,11 @@ header {
            
         }
         a {
+          &:hover{
+            color: grey;
+          }
           @media screen and (min-width: 600px) {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             margin-right: 42px;
             font-weight: 500;
           }
