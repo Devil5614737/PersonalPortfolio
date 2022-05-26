@@ -84,10 +84,6 @@ header nav .navContainer .links #themeBtn {
   cursor: pointer;
 }
 
-header nav .navContainer .links a:hover {
-  color: #dfdfdf;
-}
-
 @media screen and (min-width: 600px) {
   header nav .navContainer .links a {
     font-size: 1.5rem;
